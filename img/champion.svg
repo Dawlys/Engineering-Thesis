@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50"
+   height="50"
+   viewBox="0 0 13.229166 13.229166"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="mistrz.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="8"
+     inkscape:cx="12.5"
+     inkscape:cy="26.6875"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path3206"
+       style="fill:#ffcc00;fill-rule:evenodd;stroke:#000000;stroke-width:0.349999;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       inkscape:transform-center-x="-0.00096919807"
+       inkscape:transform-center-y="-0.82474216"
+       d="M 6.6114825,2.102714 5.183146,4.5800822 4.5681964,5.6472005 3.398242,5.2725463 0.6743772,4.4007649 l 0.6071981,2.7951782 0.6071981,2.7946615 0,1.1358484 9.4516196,0 0,-1.1358484 L 11.947591,7.1959432 12.554789,4.400765 9.8309243,5.2725464 8.6609699,5.6472005 8.0429197,4.5785319 Z" />
+  </g>
+</svg>

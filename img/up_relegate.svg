@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50"
+   height="50"
+   viewBox="0 0 13.229166 13.229166"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="beniaminek i spadkowicz.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="11.313709"
+     inkscape:cx="23.069359"
+     inkscape:cy="27.709747"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g7305"
+       transform="translate(-0.0603047)">
+      <path
+         id="rect4915"
+         style="fill:#d51a26;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.349999;stroke-opacity:1;paint-order:fill markers stroke"
+         d="M 8.742717,11.806334 9.9932866,9.6400583 11.243857,7.474299 H 9.5126958 V 1.2478057 H 7.9727381 V 7.474299 H 6.2415776 l 1.2505697,2.1657593 z" />
+      <path
+         id="rect4915-7"
+         style="fill:#00d66b;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.349999;stroke-opacity:1;paint-order:fill markers stroke"
+         d="M 4.6070585,1.4228325 3.3564889,3.5891082 2.105919,5.7548675 H 3.8370797 V 11.981361 H 5.3770374 V 5.7548675 H 7.1081979 L 5.8576282,3.5891082 Z" />
+    </g>
+  </g>
+</svg>
