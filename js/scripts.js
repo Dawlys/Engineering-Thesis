@@ -6,13 +6,11 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map)
 
-
 var bounds_map = [
-	[62.0, -8.0], 
-	[48.0, 3.0], 
+	[62.0, -8.0],
+	[48.0, 3.0],
 ]
 map.setMaxBounds(bounds_map)
-
 
 var map2 = L.map('map2').setView([51.51587323160755, -0.12969459384433432], 13)
 
@@ -34,7 +32,6 @@ var bounds_map2 = [
 
 var polygon_map2 = L.polygon(bounds_map2, { color: 'red', fillColor: 'red', fillOpacity: 0.2 }).addTo(map)
 
-
 var map3 = L.map('map3').setView([53.5449385582298, -2.6295967496750916], 13)
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -47,10 +44,10 @@ map3.dragging.disable()
 map3.removeControl(map3.zoomControl)
 
 var bounds_map3 = [
-	[54.01, -3.52], 
-	[54.01, -1.94], 
-	[53.05, -1.94], 
-	[53.05, -3.52], 
+	[54.01, -3.52],
+	[54.01, -1.94],
+	[53.05, -1.94],
+	[53.05, -3.52],
 ]
 
 var polygon_map3 = L.polygon(bounds_map3, { color: 'green', fillColor: 'green', fillOpacity: 0, opacity: 0 }).addTo(map)
@@ -101,7 +98,6 @@ var icon_runner_up = L.icon({
 	iconUrl: './img/runner_up.svg',
 })
 
-
 document.getElementById('suwak').addEventListener('input', function (x) {
 	var index = parseInt(x.target.value)
 
@@ -109,7 +105,6 @@ document.getElementById('suwak').addEventListener('input', function (x) {
 	markers_karton(index)
 	markers_karton_second(index)
 })
-
 
 function markers(index) {
 	if (teams.markers) {
@@ -129,7 +124,7 @@ function markers(index) {
 			var conceded = feature.properties.Goals_conceded
 			var stadium = feature.properties.Stadium
 			var year = feature.properties.Year
-			var location= feature.properties.City
+			var location = feature.properties.City
 
 			if (feature.properties.Seasons.includes(index)) {
 				var marker = L.marker(latlng, { icon: crest, title: club_name }).bindPopup(
@@ -192,8 +187,6 @@ function markers(index) {
 	}).addTo(map)
 }
 
-
-
 function markers_karton(index) {
 	if (teams_karton.markers_karton) {
 		map2.removeLayer(teams_karton.markers_karton)
@@ -230,7 +223,6 @@ markers(0)
 markers_karton(0)
 markers_karton_second(0)
 
-
 document.getElementById('speed').addEventListener('change', function () {
 	var speed_option = this.value
 	if (speed_option == 'speed1') {
@@ -241,8 +233,6 @@ document.getElementById('speed').addEventListener('change', function () {
 		speed_tempo = 10000
 	}
 })
-
-
 
 var iteration_value
 var speed_tempo = 1000
@@ -267,7 +257,6 @@ var iteration = () => {
 
 play_button.addEventListener('click', iteration)
 
-
 var pause_button = document.querySelector('#pause')
 
 var stop_iteration = () => {
@@ -275,8 +264,6 @@ var stop_iteration = () => {
 }
 
 pause_button.addEventListener('click', stop_iteration)
-
-
 
 var reset_button = document.querySelector('#reset')
 
