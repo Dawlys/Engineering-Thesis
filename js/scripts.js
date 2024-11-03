@@ -6,13 +6,13 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map)
 
-// granice mapy
+
 var bounds_map = [
-	[71.5, -8.0], // północno-zachodni róg
-	[48.0, 3.0], // południowo-wschodni róg
+	[62.0, -8.0], 
+	[48.0, 3.0], 
 ]
 map.setMaxBounds(bounds_map)
-// Karton dla Wielkiego Londynu
+
 
 var map2 = L.map('map2').setView([51.51587323160755, -0.12969459384433432], 13)
 
@@ -23,9 +23,17 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map2)
 
 map2.dragging.disable()
-//Full screen
+map2.removeControl(map2.zoomControl)
 
-//Karton dla Wielkiego Manchesteru oraz Merseyside
+var bounds_map2 = [
+	[51.75, -0.47],
+	[51.75, 0.31],
+	[51.27, 0.31],
+	[51.27, -0.47],
+]
+
+var polygon_map2 = L.polygon(bounds_map2, { color: 'red', fillColor: 'red', fillOpacity: 0.2 }).addTo(map)
+
 
 var map3 = L.map('map3').setView([53.5449385582298, -2.6295967496750916], 13)
 
@@ -36,6 +44,16 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map3)
 
 map3.dragging.disable()
+map3.removeControl(map3.zoomControl)
+
+var bounds_map3 = [
+	[54.01, -3.52], 
+	[54.01, -1.94], 
+	[53.05, -1.94], 
+	[53.05, -3.52], 
+]
+
+var polygon_map3 = L.polygon(bounds_map3, { color: 'green', fillColor: 'green', fillOpacity: 0, opacity: 0 }).addTo(map)
 
 document.addEventListener('DOMContentLoaded', function () {
 	var map2 = document.getElementById('map2')
@@ -47,13 +65,29 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (map_option == 'option1') {
 			map3.style.zIndex = '9998'
 			map2.style.zIndex = '9999'
+			polygon_map2.setStyle({
+				opacity: 1,
+				fillOpacity: 0.2,
+			})
+			polygon_map3.setStyle({
+				opacity: 0,
+				fillOpacity: 0,
+			})
 		} else if (map_option == 'option2') {
 			map2.style.zIndex = '9998'
 			map3.style.zIndex = '9999'
+			polygon_map2.setStyle({
+				opacity: 0,
+				fillOpacity: 0,
+			})
+			polygon_map3.setStyle({
+				opacity: 1,
+				fillOpacity: 0.2,
+			})
 		}
 	})
 })
-//zmienne dla markerów
+
 var icon_clubs = L.icon({
 	iconUrl: './img/rest_clubs.svg',
 })
@@ -67,7 +101,7 @@ var icon_runner_up = L.icon({
 	iconUrl: './img/runner_up.svg',
 })
 
-//działanie suwaka
+
 document.getElementById('suwak').addEventListener('input', function (x) {
 	var index = parseInt(x.target.value)
 
@@ -75,7 +109,7 @@ document.getElementById('suwak').addEventListener('input', function (x) {
 	markers_karton(index)
 	markers_karton_second(index)
 })
-//przyciski do suwaka
+
 
 function markers(index) {
 	if (teams.markers) {
@@ -93,14 +127,24 @@ function markers(index) {
 			var position = feature.properties.Positions
 			var goal = feature.properties.Goals
 			var conceded = feature.properties.Goals_conceded
+			var stadium = feature.properties.Stadium
+			var year = feature.properties.Year
+			var location= feature.properties.City
 
 			if (feature.properties.Seasons.includes(index)) {
 				var marker = L.marker(latlng, { icon: crest, title: club_name }).bindPopup(
 					'<h3>' +
 						club_name +
 						'</h3>' +
-						'<p>Miejsce: ' +
-						position[index] +
+						'</p>' +
+						'<p>Lokalizacja: ' +
+						location +
+						'</p>' +
+						'<p>Rok założenia: ' +
+						year +
+						'</p>' +
+						'<p>Stadion: ' +
+						stadium +
 						'</p>' +
 						'<p>Zdobyte punkty: ' +
 						points[index] +
@@ -122,7 +166,6 @@ function markers(index) {
 						'</p>'
 				)
 
-				// Event listener to change marker icon
 				var signs = document.querySelector('#sign')
 				signs.addEventListener('click', function () {
 					if (position[index] == parseInt(1)) {
@@ -143,15 +186,14 @@ function markers(index) {
 					marker.setIcon(crest)
 				})
 
-				// Return the marker to be added to the map
 				return marker
 			}
 		},
 	}).addTo(map)
 }
-//zmiana wyglądu markera
 
-// mapa 2
+
+
 function markers_karton(index) {
 	if (teams_karton.markers_karton) {
 		map2.removeLayer(teams_karton.markers_karton)
@@ -167,7 +209,7 @@ function markers_karton(index) {
 		},
 	}).addTo(map2)
 }
-//mapa 3
+
 function markers_karton_second(index) {
 	if (teams_karton_second.markers_karton_second) {
 		map3.removeLayer(teams_karton_second.markers_karton_second)
@@ -187,9 +229,7 @@ function markers_karton_second(index) {
 markers(0)
 markers_karton(0)
 markers_karton_second(0)
-//zmiana wyglądu markera
 
-//predkość odtwarzania
 
 document.getElementById('speed').addEventListener('change', function () {
 	var speed_option = this.value
@@ -202,7 +242,7 @@ document.getElementById('speed').addEventListener('change', function () {
 	}
 })
 
-//przycisk play
+
 
 var iteration_value
 var speed_tempo = 1000
@@ -218,7 +258,7 @@ var iteration = () => {
 		markers_karton_second(parseInt(suwak.value))
 		markers_karton(parseInt(suwak.value))
 		markers(parseInt(suwak.value))
-		
+
 		if (parseInt(suwak.value) >= 31) {
 			clearInterval(iteration_value)
 		}
@@ -227,7 +267,7 @@ var iteration = () => {
 
 play_button.addEventListener('click', iteration)
 
-//przycisk pause
+
 var pause_button = document.querySelector('#pause')
 
 var stop_iteration = () => {
@@ -236,7 +276,7 @@ var stop_iteration = () => {
 
 pause_button.addEventListener('click', stop_iteration)
 
-//przycisk reset
+
 
 var reset_button = document.querySelector('#reset')
 
