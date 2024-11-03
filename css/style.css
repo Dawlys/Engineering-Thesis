@@ -40,7 +40,7 @@ body {
 	top: 0;
 	right: 0;
 	z-index: 9999;
-	border: 2px rgb(240, 75, 75) solid;
+	border: 2px #f04b4b solid;
 }
 #map3 {
 	display: block;
@@ -122,4 +122,3 @@ datalist option {
 		right: 0;
 	}
 }
-
