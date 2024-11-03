@@ -6,6 +6,8 @@ var teams = {
 			properties: {
 				ID: 'Aston Villa',
 				City:"Birmingham",
+				Year: "1861",
+				Stadium: "Selhurst Park",
 				iconUrl: './img/aston_villa.svg',
 				imageUrl: './img/stadiums/villa_park.jpg',
 				Seasons: [
@@ -31,9 +33,10 @@ var teams = {
 			properties: {
 				ID: 'Arsenal',
 				City:"London",
+				Year:"1886",
+				Stadium:"Emirates Stadium",
 				iconUrl: './img/arsenal.svg',
 				Seasons: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,24,25,26, 27, 28, 29, 30, 31,],
-				Opis: ['', 'Siema', 'Witam'],
 				Points: ['56', '71', '51', '63', '68', '78', '78', '73', '70','87','78','90','83','67','68','83','72','75','68','70','73','79','75','71','75','63','70','56','61','69','84','89'],
 				Positions: ['10', '4', '12', '5', '3', '1', '2', '2', '2','1','2','1','2','4','4','3','4','3','4','3','4','4','3','2','5','6','5','8','8','5','2','2'],
 				Wins: ['15', '18', '13', '17', '19', '23', '22', '22', '20','26','23','26','25','20','19','24','20','23','19','21','21','24','22','20','23','19','21','14','18','22','26','28'],
@@ -51,6 +54,8 @@ var teams = {
 			properties: {
 				ID: 'Chelsea',
 				City:"London",
+				Year: "1905",
+				Stadium: "Stamford Bridge",
 				iconUrl: './img/chelsea.svg',
 				Seasons: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,24,25,26, 27, 28, 29, 30, 31],
 				Opis: ['', 'Siema', 'Witam'],
@@ -69,6 +74,8 @@ var teams = {
 			properties: {
 				ID: 'Tottenham Hotspur',
 				City:"London",
+				Year: "1882",
+				Stadium: "Tottenham Hotspur Stadium",
 				iconUrl: './img/tottenham.svg',
 				Seasons: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,24,25,26, 27, 28, 29, 30, 31],
 				Opis: ['', 'Siema', 'Witam'],
@@ -86,10 +93,11 @@ var teams = {
 			type: 'Feature',
 			properties: {
 				ID: 'Crystal Palace',
-				City:"London",
+				City:"Londyn",
+				Year: "1861",
+				Stadium: "Selhurst Park",
 				iconUrl: './img/crystal_palace.svg',
 				Seasons: [0, 2, 5, 12, 21, 22, 23,24,25,26, 27, 28, 29, 30, 31],
-				Opis: ['', 'Siema', 'Witam'],
 				Points: ['49', '', '45', '', '', '33', '', '', '', '', '', '', '33', '', '', '', '', '', '', '', '', '45', '48', '42','41','44','49', '43', '44', '48', '45', '49'],
 
 				Positions: ['20', '', '19', '', '', '20', '', '', '', '', '', '', '18', '', '', '', '', '', '', '', '', '11', '10', '15','14','11','12', '14', '14', '12', '11', '10'],
@@ -112,6 +120,8 @@ var teams = {
 			properties: {
 				ID: 'Wimbledon',
 				City:"London",
+				Year: "1889",
+				Stadium:"Selhurst Park",
 				iconUrl: './img/wimbledon.svg',
 				Seasons: [0, 1, 2, 3, 4, 5, 6, 7],
 				Opis: ['', 'Siema', 'Witam'],
@@ -130,10 +140,11 @@ var teams = {
 			properties: {
 				ID: 'Queens Park Rangers',
 				City:"London",
+				Year: "1882",
+				Stadium: "Loftus Road",
 				iconUrl: './img/queens_park_rangers.svg',
 				Seasons: [0, 1, 2, 3,19,20,22],
 				Opis: ['', 'Siema', 'Witam'],
-				
 				Points: ['63', '60', '60', '33', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '37', '25', '', '30', '','','','', '', '', '', '', ''],
 				Positions: ['5', '9', '8', '19', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '17', '20', '', '20', '','','','', '', '', '', '', ''],
 				Wins: ['17', '16', '17', '9', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '10', '4', '', '8', '','','','', '', '', '', '', ''],
@@ -149,6 +160,8 @@ var teams = {
 			properties: {
 				ID: 'Swindon Town',
 				City:"Swindon",
+				Year:"1881",
+				Stadium: "The County Ground", 
 				iconUrl: './img/swindon.svg',
 				Seasons: [1],
 				Opis: ['', 'Siema Hej dobry', 'Witam'],
@@ -167,6 +180,8 @@ var teams = {
 			properties: {
 				ID: 'Blackburn Rovers',
 				City:"Blackburn",
+				Year:"1875",
+				Stadium:"Ewood Park",
 				iconUrl: './img/blackburn_rovers.svg',
 				Seasons: [0, 1, 2, 3, 4, 5, 6,9,10,11,12,13,14,15,16,17,18,19],
 				Opis: ['', 'Siema Hej dobry', 'Witam'],
@@ -186,6 +201,8 @@ var teams = {
 			properties: {
 				ID: 'Coventry City',
 				City:"Coventry",
+				Year:"1883",
+				Stadium:"Coventry Building Society Arena",
 				iconUrl: './img/coventry_city.svg',
 				Seasons: [0, 1, 2, 3, 4, 5, 6, 7, 8],
 				Opis: ['', 'Siema Hej dobry', 'Witam'],
@@ -204,6 +221,8 @@ var teams = {
 			properties: {
 				ID: 'Ipswich Town',
 				City:"Ipswich",
+				Year: "1878",
+				Stadium: "Portman Road",
 				iconUrl: './img/ipswich_town.svg',
 				Seasons: [0, 1, 2, 8,9],
 				Opis: ['', 'Siema Hej dobry', 'Witam'],
@@ -227,6 +246,8 @@ var teams = {
 			properties: {
 				ID: 'Manchester City',
 				City:"Manchester",
+				Year:"1880",
+				Stadium:"Etihad Stadium",
 				iconUrl: './img/man_city.svg',
 				Seasons:[0, 1, 2, 3, 8,10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,24,25,26, 27, 28, 29, 30, 31],
 				Opis: ['', 'Siema Hej dobry', 'Witam'],
@@ -245,6 +266,8 @@ var teams = {
 			properties: {
 				ID: 'Manchester United',
 				City:"Manchester",
+				Year:"1878",
+				Stadium:"Old Trafford",
 				iconUrl: './img/man_utd.svg',
 				Seasons: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,24,25,26, 27, 28, 29, 30, 31],
 				Opis: ['', 'Siema Hej dobry', 'Witam'],
@@ -263,6 +286,8 @@ var teams = {
 			properties: {
 				ID: 'Middlesbrough',
 				City:"Middlesbrough",
+				Year:"1876",
+				Stadium:"Riverside Stadium",
 				iconUrl: './img/middlesbrough.svg',
 				Seasons: [0, 3, 4, 6, 7, 8,9,10,11,12,13,14,15,16,24],
 				Opis: ['', 'Siema Hej dobry', 'Witam'],
@@ -283,6 +308,8 @@ var teams = {
 			properties: {
 				ID: 'Leeds United',
 				City:'Leeds',
+				Year:"1919",
+				Stadium:"Elland Road",
 				iconUrl: './img/leeds_utd.svg',
 				Seasons: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 28, 29, 30],
 				Opis: ['Hejo', 'Siema', 'Witam'],
@@ -306,6 +333,8 @@ var teams = {
 			properties: {
 				ID: 'Liverpool',
 				City:'Liverpool',
+				Year:"1892",
+				Stadium:"Anfield",
 				iconUrl: './img/liverpool.svg',
 				Seasons: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,24,25,26, 27, 28, 29, 30, 31],
 				Opis: ['Hejo', '', 'Witam'],
@@ -326,6 +355,8 @@ var teams = {
 			properties: {
 				ID: 'Everton',
 				City:'Liverpool',
+				Year:"1878",
+				Stadium:"Goodison Park",
 				iconUrl: './img/everton.svg',
 				Seasons: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,24,25,26, 27, 28, 29, 30, 31],
 				Opis: ['Hejo', '', 'Witam'],
@@ -346,6 +377,8 @@ var teams = {
 			properties: {
 				ID: 'Newcastle United',
 				City:'Newcastle',
+				Year:"1892",
+				Stadium:"St James' Park",
 				iconUrl: './img/newcastle.svg',
 				Seasons: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23,25,26, 27, 28, 29, 30, 31],
 				Opis: ['Hejo', '', 'Witam'],
@@ -365,6 +398,8 @@ var teams = {
 			properties: {
 				ID: 'Norwich City',
 				City:'Norwich',
+				Year:"1902",
+				Stadium:"Carrow Road",
 				iconUrl: './img/norwich_city.svg',
 				Seasons: [0,1,2,12,19,20,21,23,27,29],
 				Opis: ['Hejo', '', 'Witam'],
@@ -385,6 +420,8 @@ var teams = {
 			type: 'Feature',
 			properties: {
 				ID: 'Nottingham Forest',
+				Year:"1865",
+				Stadium:"City Ground",
 				City:'Nottingham, West Bridgeford',
 				iconUrl: './img/nottingham_forest.svg',
 				Seasons: [0, 2, 3, 4, 6,30,31],
@@ -405,6 +442,8 @@ var teams = {
 			properties: {
 				ID: 'Oldham Athletic',
 				City:'Oldham',
+				Year:"1895",
+				Stadium:"Boundary Park",
 				iconUrl: './img/oldham_athletic.svg',
 				Seasons: [0, 1],
 				Opis: ['Hejo', '', 'Witam'],
@@ -423,6 +462,8 @@ var teams = {
 			properties: {
 				ID: 'Sheffield United',
 				City:'Sheffield',
+				Year:"1889",
+				Stadium:"Bramall Lane",
 				iconUrl: './img/sheffield_utd.svg',
 				Seasons: [0, 1,14,27,28,31],
 				Opis: ['Hejo', '', 'Witam'],
@@ -442,6 +483,8 @@ var teams = {
 			properties: {
 				ID: 'Sheffield Wednesday',
 				City:'Sheffield',
+				Year:"1867",
+				Stadium:"Hillsborough Stadium",
 				iconUrl: './img/sheffield_wednesday.svg',
 				Seasons: [0, 1, 2, 3, 4, 5, 6, 7],
 				Opis: ['Hejo', '', 'Witam'],
@@ -460,6 +503,8 @@ var teams = {
 			properties: {
 				ID: 'Southampton',
 				City:'Southampton',
+				Year:"1885",
+				Stadium:"St Mary's Stadium",
 				iconUrl: './img/southampton.svg',
 				Seasons: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 20, 21, 22, 23,24,25,26, 27, 28, 29, 30],
 				Opis: ['Hejo', '', 'Witam'],
@@ -480,6 +525,8 @@ var teams = {
 			properties: {
 				ID: 'West Ham United',
 				City:'London',
+				Year:"1895",
+				Stadium:"London Stadium",
 				iconUrl: './img/west_ham_utd.svg',
 				Seasons: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13, 14, 15, 17, 16, 18, 20, 21, 22, 24, 23, 25, 26, 27, 28, 29, 30, 31],
 				Opis: ['Hejo', '', 'Witam'],
@@ -504,6 +551,8 @@ var teams = {
 			properties: {
 				ID: 'Leicester City',
 				City:'Leicester',
+				Year:"1884",
+				Stadium:"King Power Stadium",
 				iconUrl: './img/leicester.svg',
 				Seasons: [2, 4, 5, 6, 7, 8,9,11,22, 23,24,25,26, 27, 28, 29, 30],
 				Opis: ['Hejo', '', 'Witam'],
@@ -529,6 +578,8 @@ var teams = {
 			properties: {
 				ID: 'Bolton Wanderers',
 				City:'Bolton',
+				Year:"1874",
+				Stadium:"Toughsheet Community Stadium",
 				iconUrl: './img/bolton_wanderers.svg',
 				Seasons:[3, 5,9, 10,11,12, 13, 14, 15, 16, 17, 18, 19],
 				Opis: ['Hejo', '', 'Witam'],
@@ -551,8 +602,10 @@ var teams = {
 		{
 			type: 'Feature',
 			properties: {
-				ID: 'Sunderland A.F.C',
+				ID: 'Sunderland',
 				City:'Sunderland',
+				Year:"1879",
+				Stadium:"Stadium of Light",
 				iconUrl: './img/sunderland.svg',
 				Seasons: [4, 7, 8,9,10,13,15,16,17,18,19,20,21,22,23,24],
 				Opis: ['Hejo', '', 'Witam'],
@@ -577,6 +630,8 @@ var teams = {
 			properties: {
 				ID: 'Derby County',
 				City:'Derby',
+				Year:"1884",
+				Stadium:"Pride Park Stadium",
 				iconUrl: './img/derby_county.svg',
 				Seasons: [4, 5, 6, 7, 8,9,15],
 				Opis: ['Hejo', '', 'Witam'],
@@ -595,6 +650,8 @@ var teams = {
 			properties: {
 				ID: 'Watford',
 				City:'Watford',
+				Year:"1881",
+				Stadium:"Vicarage Road",
 				iconUrl: './img/watford.svg',
 				Seasons: [7,14,23,24,25,26,27,29],
 				Opis: ['Hejo', '', 'Witam'],
@@ -634,8 +691,10 @@ var teams = {
 		{
 			type: 'Feature',
 			properties: {
-				ID: 'Bradford City A.F.C',
+				ID: 'Bradford City',
 				City:'Bradford',
+				Year:"1903",
+				Stadium:"Valley Parade",
 				iconUrl: './img/bradford_city.svg',
 				Seasons: [7, 8],
 				Opis: ['Hejo', '', 'Witam'],
@@ -654,6 +713,8 @@ var teams = {
 			properties: {
 				ID: 'Barnsley',
 				City:'Barnsley',
+				Year:"1887",
+				Stadium:"Oakwell Stadium",
 				iconUrl: './img/barnsley.svg',
 				Seasons: [5],
 				Opis: ['Hejo', '', 'Witam'],
@@ -672,6 +733,8 @@ var teams = {
 			properties: {
 				ID: 'Charlton Athletic',
 				City:'London',
+				Year:"1905",
+				Stadium:"The Valley",
 				iconUrl: './img/charlton_athletic.svg',
 				Seasons: [6, 8,9,10,11,12,13,14],
 				Opis: ['Hejo', '', 'Witam'],
@@ -691,6 +754,8 @@ var teams = {
 			properties: {
 				ID: 'Fulham',
 				City:'London',
+				Year:"1879",
+				Stadium:"Craven Cottage",
 				iconUrl: './img/fulham.svg',
 				Seasons: [9,10,11,12,13,14,15,16,17,18,19,20,21,26,28,30,31],
 				Opis: ['Hejo', '', 'Witam'],
@@ -715,6 +780,8 @@ var teams = {
 			properties: {
 				ID: 'Birmingham City',
 				City:'Birmingham',
+				Year:"1875",
+				Stadium:"St Andrew's Stadium",
 				iconUrl: './img/birmingham_city.svg',
 				Seasons: [10,11,12,13,15,17,18],
 				Points: ['', '', '' ,'' ,'', '', '', '', '', '', '48', '50', '45', '34', '', '35', '', '50', '39'],
@@ -732,6 +799,8 @@ var teams = {
 			properties: {
 				ID: 'West Bromwich Albion',
 				City:'West Bromwich',
+				Year:"1878",
+				Stadium:"The Hawthorns",
 				iconUrl: './img/wba.svg',
 				Seasons: [10,12,13,16,18,19,20,21,22,23,24,25,28],
 				Opis: ['Hejo', '', 'Witam'],
@@ -750,6 +819,8 @@ var teams = {
 			properties: {
 				ID: 'Wolverhampton Wanderers',
 				City:'Wolverhampton',
+				Year:"1877",
+				Stadium:"Molineux Stadium",
 				iconUrl: './img/wolves.svg',
 				Seasons: [11,17,18,19,26,27,28,29,30,31],
 				Opis: ['Hejo', '', 'Witam'],
@@ -768,6 +839,8 @@ var teams = {
 			properties: {
 				ID: 'Portsmouth',
 				City:"Portsmouth",
+				Year:"1898",
+				Stadium:"Fratton Park",
 				iconUrl: './img/portsmouth.svg',
 				Seasons: [11,12,13,14,15,16,17],
 				Opis: ['Hejo', '', 'Witam'],
@@ -786,6 +859,8 @@ var teams = {
 			properties: {
 				ID: 'Wigan Athletic',
 				City:"Wigan",
+				Year:"1932",
+				Stadium:"The Brick Community Stadium",
 				iconUrl: './img/wigan.svg',
 				Seasons: [13, 14, 15, 16, 17, 18, 19, 20],
 				Opis: ['Hejo', '', 'Witam'],
@@ -805,6 +880,8 @@ var teams = {
 			properties: {
 				ID: 'Reading',
 				City:"Reading",
+				Year:"1871",
+				Stadium:"Select Car Leasing Stadium",
 				iconUrl: './img/reading.svg',
 				Seasons: [14,15,20],
 				Opis: ['Hejo', '', 'Witam'],
@@ -823,6 +900,8 @@ var teams = {
 			properties: {
 				ID: 'Hull City A.F.C',
 				City:"Kingston upon Hull",
+				Year:"1904",
+				Stadium:"MKM Stadium",
 				iconUrl: './img/hull_city.svg',
 				Seasons: [16,17,21,22,24],
 				Opis: ['Hejo', '', 'Witam'],
@@ -841,6 +920,8 @@ var teams = {
 			properties: {
 				ID: 'Stoke City',
 				City:"Stoke-on-Trent",
+				Year:"1863",
+				Stadium:"Bet365 Stadium",
 				iconUrl: './img/stoke_city.svg',
 				Seasons: [16, 17, 18, 19, 20, 21, 22, 23,24,25],
 				Opis: ['Hejo', '', 'Witam'],
@@ -859,6 +940,8 @@ var teams = {
 			properties: {
 				ID: 'Burnley',
 				City:"Burnley",
+				Year:"1882",
+				Stadium:"Turf Moor",
 				iconUrl: './img/burnley.svg',
 				Seasons: [17,22,24,25,26,27,28,29,31],
 				Opis: ['Hejo', '', 'Witam'],
@@ -877,6 +960,8 @@ var teams = {
 			properties: {
 				ID: 'Blackpool',
 				City:"Blackpool",
+				Year:"1887",
+				Stadium:"Bloomfield Road",
 				iconUrl: './img/blackpool.svg',
 				Seasons: [18],
 				Opis: ['Hejo', '', 'Witam'],
@@ -893,8 +978,10 @@ var teams = {
 		{
 			type: 'Feature',
 			properties: {
-				ID: 'Swansea City A.F.C',
+				ID: 'Swansea City',
 				City:"Swansea",
+				Year:"1912",
+				Stadium:"Swansea.com Stadium",
 				iconUrl: './img/swansea.svg',
 				Seasons: [19,20,21,22,23,24,25],
 				Opis: ['Hejo', '', 'Witam'],
@@ -911,8 +998,10 @@ var teams = {
 		{
 			type: 'Feature',
 			properties: {
-				ID: 'Cardiff City F.C',
+				ID: 'Cardiff City',
 				City:"Cardiff",
+				Year:"1899",
+				Stadium:"Cardiff City Stadium",
 				iconUrl: './img/cardiff.svg',
 				Seasons: [21,26],
 				Opis: ['Hejo', '', 'Witam'],
@@ -931,6 +1020,8 @@ var teams = {
 			properties: {
 				ID: 'AFC Bournemouth',
 				City:"Bournemouth",
+				Year:"1890",
+				Stadium:"Vitality Stadium",
 				iconUrl: './img/bournemouth.svg',
 				Seasons: [23,24,25,26,27,30,31],
 				Opis: ['Hejo', '', 'Witam'],
@@ -947,8 +1038,10 @@ var teams = {
 		{
 			type: 'Feature',
 			properties: {
-				ID: 'Huddersfield Town A.F.C',
+				ID: 'Huddersfield Town',
 				City:'Huddersfield',
+				Year:"1908",
+				Stadium:"John Smith's Stadium",
 				iconUrl: './img/huddersfield.svg',
 				Seasons: [25,26],
 				Opis: ['Hejo', '', 'Witam'],
@@ -965,8 +1058,10 @@ var teams = {
 		{
 			type: 'Feature',
 			properties: {
-				ID: 'Brighton & Hove Albion F.C',
+				ID: 'Brighton & Hove Albion',
 				City:'Brighton',
+				Year:"1901",
+				Stadium:"American Express Stadium",
 				iconUrl: './img/brighton.svg',
 				Seasons: [25,26,27,28,29,30,31],
 				Opis: ['Hejo', '', 'Witam'],
@@ -983,8 +1078,10 @@ var teams = {
 		{
 			type: 'Feature',
 			properties: {
-				ID: 'Brentford F.C',
+				ID: 'Brentford',
 				City:'London',
+				Year:"1889",
+				Stadium:"Gtech Community Stadium",
 				iconUrl: './img/brentford.svg',
 				Seasons: [29,30,31],
 				Opis: ['Hejo', '', 'Witam'],
@@ -1001,8 +1098,10 @@ var teams = {
 		{
 			type: 'Feature',
 			properties: {
-				ID: 'Luton Town F.C',
+				ID: 'Luton Town',
 				City:'Luton',
+				Year:"1885",
+				Stadium:"Kenilworth Road",
 				iconUrl: './img/luton_town.svg',
 				Seasons: [31],
 				Opis: ['Hejo', '', 'Witam'],
