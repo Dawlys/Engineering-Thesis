@@ -121,7 +121,7 @@ var teams = {
 				ID: 'Wimbledon',
 				City:"London",
 				Year: "1889",
-				Stadium:"Selhurst Park",
+				Stadium:"The Cherry Red Records Stadium",
 				iconUrl: './img/wimbledon.svg',
 				Seasons: [0, 1, 2, 3, 4, 5, 6, 7],
 				Opis: ['', 'Siema', 'Witam'],
