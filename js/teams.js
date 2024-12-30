@@ -7,7 +7,7 @@ var teams = {
 				ID: 'Aston Villa',
 				City:"Birmingham",
 				Year: "1861",
-				Stadium: "Selhurst Park",
+				Stadium: "Villa Park",
 				iconUrl: './img/aston_villa.svg',
 				imageUrl: './img/stadiums/villa_park.jpg',
 				Seasons: [
